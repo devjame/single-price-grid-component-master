@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Single Price Grid Component</title>
 
@@ -16,32 +18,34 @@
 </head>
 <body>
 
-  <main>
-    <section class="subscription">
-      <div>
-        <h2>Join our community</h1>
-        <h3>30-day, hassle-free money back guarantee<h2>
-        <p>Gain access to our full library of tutorials along with expert code reviews.
+  <main class="wrapper">
+    <section class="container">
+      <div class="grid grid--bordered">
+        <h2 class="grid__title">Join our community</h2>
+        <h3 class="grid__subtitle">30-day, hassle-free money back guarantee</h3>
+        <p class="grid__desc">Gain access to our full library of tutorials along with expert code reviews.
         Perfect for any developers who are serious about honing their skills.</p>
       </div>
     </section>
 
-    <section class="flex-container">
-      <div class="flex-items">
-        <h2 class="flex-items__title">Monthly Subscription</h2>
-        <p><span>&dollar;29</span> per month</p>
-        <p>Full access for less than &dollar;1 a day</p>
+    <section class="feature">
+      <div class="grid grid--darker">
+        <h2 class="grid__title">Monthly Subscription</h2>
+        <p class="grid__price"><span>&dollar;29</span> per month</p>
+        <p class="grid__desc price-caption">Full access for less than &dollar;1 a day</p>
         <a class="btn btn--primary" href="#">Sign Up</a>
       </div>
-      <div class="flex-items">
-        <h2 class="flex-items__title">Why Us</h2>
-        <p>Tutorials by industry experts
-        Peer &amp; expert code review
-        Coding exercises
-        Access to our GitHub repos
-        Community forum
-        Flashcard decks
-        New videos every week</p>
+      <div class="grid grid--darker-2">
+        <h2 class="grid__title">Why Us</h2>
+        <pre class="grid__desc">
+Tutorials by industry experts
+Peer & expert code review
+Coding  exercises
+Access to our GitHub repos
+Community forum
+Flashcard decks
+New videos every week
+        </pre>
       </div>
     </section>
   </main>
