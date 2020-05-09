@@ -13,7 +13,7 @@ body {
 
 h2 {
   color: #2ab2af;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   padding-bottom: 1.2rem;
 }
@@ -26,7 +26,8 @@ pre {
 }
 
 .wrapper {
-  margin: 4rem 6%;
+  margin: 4rem 5%;
+  max-width: 650px;
 }
 
 .grid {
@@ -52,6 +53,7 @@ pre {
   color: #2ab2af;
   line-height: 1.6;
   font-size: 0.9rem;
+  max-width: 60ch;
 }
 
 .feature .grid__title {
@@ -89,6 +91,57 @@ pre {
 .btn--primary {
   background-color: #c0df34;
   color: inherit;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: #270D28;
+  padding-top: 1em;
+  height: 5vh;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 32.5rem) {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .wrapper {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .container {
+    grid-column: 1/-1;
+  }
+
+  .feature {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid {
+    padding: 2.5rem;
+  }
+  .grid--darker-2 {
+    background-color: #2fc6c4;
+    border-radius: 0 0 5px 0;
+    box-shadow: none;
+  }
+  .grid--darker {
+    border-bottom-left-radius: 5px;
+  }
+  .grid__desc {
+    font-size: 0.9375rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
