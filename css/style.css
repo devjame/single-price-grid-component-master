@@ -80,7 +80,7 @@ pre {
 .btn {
   display: block;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   margin-top: 1.5rem;
   padding: 0.9em;
   font-weight: 700;
@@ -96,7 +96,7 @@ pre {
 
 .btn--primary:hover {
   background-color: #a4c21e;
-  color: inherit;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .attribution {
