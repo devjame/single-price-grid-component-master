@@ -94,6 +94,11 @@ pre {
   color: inherit;
 }
 
+.btn--primary:hover {
+  background-color: #a4c21e;
+  color: inherit;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

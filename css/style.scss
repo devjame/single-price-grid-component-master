@@ -103,11 +103,16 @@ pre {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-
+  max-width: 250px;
 }
 
 .btn--primary {
   background-color: $accent-color;
+  color: inherit;
+}
+
+.btn--primary:hover {
+  background-color: darken($accent-color, 10%);
   color: inherit;
 }
 
